@@ -48,4 +48,4 @@ public class Ejercicio5 {
         System.out.println(Arrays.toString(arrayPares));
         System.out.println(Arrays.toString(arrayImpares));
     }
-}
+} // € Hecho por Antonio Navarro

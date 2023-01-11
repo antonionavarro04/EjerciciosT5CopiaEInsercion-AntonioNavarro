@@ -53,4 +53,4 @@ public class Ejercicio4 {
         System.out.println(Arrays.toString(tablaEnteros));
         System.out.println(Arrays.toString(nuevaTabla));
     }
-}
+} // € Hecho por Antonio Navarro
