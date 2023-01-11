@@ -13,7 +13,7 @@ public class Ejercicio6 {
         int posicion = arrayGenerado.length - 1;
 
         // ! Rellenamos el array con valores del 1 al 100
-        for (byte pos = 0; pos < arrayInverso.length; pos++) {
+        for (int pos = 0; pos < arrayGenerado.length; pos++) {
             arrayGenerado[pos] = pos + 1;
         }
 
@@ -25,6 +25,7 @@ public class Ejercicio6 {
 
         // ! Imprimimos los dos Arrays
         System.out.println(Arrays.toString(arrayGenerado));
+        System.out.println();
         System.out.println(Arrays.toString(arrayInverso));
     }
 } // € Hecho por Antonio Navarro
