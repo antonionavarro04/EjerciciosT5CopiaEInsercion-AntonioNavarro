@@ -13,7 +13,7 @@ public class Ejercicio3 {
             // ? Si el numero es 1 o menor no hacemos nada
         } else {
             for (int divisor = 2; divisor < numero; divisor++) {
-                if (numero / divisor == 0) {
+                if (numero % divisor == 0) {
                     break;
                 } else {
                     state = true;
