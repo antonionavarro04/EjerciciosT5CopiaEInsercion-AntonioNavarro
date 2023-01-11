@@ -11,9 +11,6 @@ public class Ejercicio4 {
         int[] tablaEnteros = new int[10];
         int[] nuevaTabla = new int[tablaEnteros.length];
 
-        // ^ Definimos un array para guardar los valores que ya se han encontrado para que no se metan al nuevo
-        int[] valoresYaEncontrados = new int[tablaEnteros.length];
-
         // ^ Definimos una variable newPositions para las nuevas posiciones del Array
         byte newPositions = 0;
 
@@ -24,8 +21,7 @@ public class Ejercicio4 {
         System.out.println("Introduce 10 valores:");
         for (byte pos = 0; pos < tablaEnteros.length; pos++) {
             System.out.print("[" + pos + "] -> ");
-            //tablaEnteros[pos] = read.nextInt();
-            tablaEnteros[pos] = (int) (Math.random() * 4 + 1);
+            tablaEnteros[pos] = read.nextInt();
         }
 
         // ! Mostramos los dos Arrays
@@ -36,19 +32,19 @@ public class Ejercicio4 {
         read.close();
         
         // ? Salto de Línea Triple
-        System.out.println("\n----------------------\n");
+        System.out.println("\n------------------------------------------------------------------\n");
         
-        // ! Recorremos el array y vamos introduciendo los numeros que no estan repetidos en el nuevo array
+        // ! Quitamos los valores repetidos del primer array y los guardamos en el segundo
         for (int numero : tablaEnteros) {
+            boolean encontrado = false;
             for (int valor : nuevaTabla) {
                 if (numero == valor) {
-                    newPositions++;
-                    break;
-                } else {
-                    nuevaTabla[newPositions] = numero;
-                    newPositions++;
+                    encontrado = true;
                     break;
                 }
+            } if (!encontrado) {
+                nuevaTabla[newPositions] = numero;
+                newPositions++;
             }
         }
 
