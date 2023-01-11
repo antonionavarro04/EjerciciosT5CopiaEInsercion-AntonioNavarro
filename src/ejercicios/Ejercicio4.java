@@ -9,7 +9,7 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         // ^ Definimos un array tablaEnteros de 10 posiciones y crearemos otra con las mismas posiciones
         int[] tablaEnteros = new int[10];
-        int[] nuevaTabla = new int[tablaEnteros.length];
+        int[] nuevaTabla = new int[0];
 
         // ^ Definimos una variable newPositions para las nuevas posiciones del Array
         byte newPositions = 0;
@@ -43,6 +43,7 @@ public class Ejercicio4 {
                     break;
                 }
             } if (!encontrado) {
+                nuevaTabla = Arrays.copyOf(nuevaTabla, nuevaTabla.length + 1);
                 nuevaTabla[newPositions] = numero;
                 newPositions++;
             }
