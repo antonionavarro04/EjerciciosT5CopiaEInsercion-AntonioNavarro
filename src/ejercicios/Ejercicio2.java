@@ -9,7 +9,7 @@ public class Ejercicio2 {
         int[] arrayPrincipal = new int[20];
         int[] arrayFinal = new int[arrayPrincipal.length];
 
-        // ^ Definimos una variable para las posiciones de los arrays finales
+        // ^ Definimos una variable para las posiciones del nuevo array
         byte newPositions = 0;
 
         // ! Rellenamos el array con valores aleatorios entre 0 y 100
