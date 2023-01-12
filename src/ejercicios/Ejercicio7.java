@@ -33,8 +33,7 @@ public class Ejercicio7 {
         // ^ Definimos una variable char
         char opcion;
 
-        // ! Mediante un bucle mostramos al usuario un menu
-        do {
+        do { // ! Mediante un bucle mostramos al usuario un menu
             imprimirMenu();
             opcion = read.next().charAt(0);
             
@@ -73,4 +72,4 @@ public class Ejercicio7 {
         // ^ Cerramos el Scanner tras su uso
         read.close();
     }
-}
+} // € Hecho por Antonia Navarro
