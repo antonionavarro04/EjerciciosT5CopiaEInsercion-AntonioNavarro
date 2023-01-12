@@ -24,10 +24,6 @@ public class Ejercicio4 {
             tablaEnteros[pos] = read.nextInt();
         }
 
-        // ! Mostramos los dos Arrays
-        System.out.println(Arrays.toString(tablaEnteros));
-        System.out.println(Arrays.toString(nuevaTabla));
-
         // ^ Cerramos el Scanner tras su uso
         read.close();
         
